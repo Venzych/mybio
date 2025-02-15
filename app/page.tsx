@@ -1,4 +1,5 @@
-"use client";
+{
+  /*"use client";
 
 import { useTranslation } from "react-i18next";
 import Layout, { Content, Footer, Header } from "antd/es/layout/layout";
@@ -6,11 +7,13 @@ import "./styles.css";
 import { Button, Space } from "antd";
 import { GithubOutlined } from "@ant-design/icons";
 import { FaVk, FaTelegramPlane } from "react-icons/fa";
+import Clock from "./components/Clock";
 
 export default function Home() {
   const { t } = useTranslation();
   return (
     <div>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <Header
         style={{
           backgroundColor: "#4CAF50", // Задаём зелёный цвет фона
@@ -37,7 +40,6 @@ export default function Home() {
       <Footer className="highlight-text footer-text">
         <div id="links">{t("homeText.bio")}</div>
         <Space size="middle">
-          {/* GitHub */}
           <Button
             type="default"
             shape="circle"
@@ -47,7 +49,6 @@ export default function Home() {
             target="_blank"
           />
 
-          {/* Telegram */}
           <Button
             type="default"
             shape="circle"
@@ -57,7 +58,6 @@ export default function Home() {
             target="_blank"
           />
 
-          {/* VK (используем react-icons) */}
           <Button
             type="default"
             shape="circle"
@@ -70,4 +70,9 @@ export default function Home() {
       </Footer>
     </div>
   );
+}
+*/
+}
+export default function Home() {
+  return <h1>Hello</h1>;
 }

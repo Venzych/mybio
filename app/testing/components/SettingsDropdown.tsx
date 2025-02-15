@@ -11,7 +11,6 @@ export default function SettingsDropdown({
   const { t } = useTranslation();
 
   const toggleTheme = () => {
-    // Вместо функции с prev, просто передаем новое значение
     const newTheme = !darkMode;
     setDarkMode(newTheme);
     localStorage.setItem("theme", newTheme ? "dark" : "light");
