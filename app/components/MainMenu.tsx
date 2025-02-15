@@ -7,22 +7,12 @@ export default function MainMenu() {
   const menuItems = [
     { href: "#home", title: t("home") },
     { href: "#about", title: t("about") },
+    { href: "#hobby", title: t("hobby") },
     { href: "#links", title: t("links") },
   ];
 
   return (
-    <div
-      style={{
-        position: "fixed",
-        top: "100px",
-        left: "20px",
-        zIndex: 1000,
-        width: "120px",
-        padding: "10px",
-        borderRadius: "10px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-      }}
-    >
+    <div className="font-raleway fixed top-[100px] left-[20px] z-[1000] w-[120px] p-[10px] text-[20px] text-left">
       <Anchor
         style={{
           fontSize: "20px",

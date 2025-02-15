@@ -6,6 +6,7 @@ const resources = {
     translation: {
       home: "Home",
       about: "About",
+      hobby: "Hobby",
       links: "Links",
 
       lightMode: "Light Mode",
@@ -15,12 +16,21 @@ const resources = {
       english: "English",
       russian: "Russian",
 
-      homeText: {
+      greeting: {
         part1: "Hello!",
-        part2:
-          "This site is the first project that is related to the backend, and in general, the first project on the front.",
-        bio: "Links to my social media:",
+        part2: "",
+        part3: "",
+        part4: "",
       },
+
+      aboutme: {
+        part1: "",
+        part2: "",
+      },
+
+      firstSecret: "Мне так нравится WW в этом шрифте",
+
+      bio: "Links to my social media:",
 
       loading: "Loading...",
     },
@@ -29,6 +39,7 @@ const resources = {
     translation: {
       home: "Главная",
       about: "Обо мне",
+      hobby: "Увлечения",
       links: "Ссылки",
 
       lightMode: "Светлая тема",
@@ -38,12 +49,27 @@ const resources = {
       english: "Английский",
       russian: "Русский",
 
-      homeText: {
+      greeting: {
         part1: "Приветствую!",
         part2:
-          "Данный сайт является первым проектом, который связан с бекэндом, да и в целом первый проект по фронту.",
-        bio: "Ссылки на мои социальные сети:",
+          "Данный сайт является стартовым проектом, который параллельно является моей визиткой.",
+        part3:
+          "Сайт переведён на английский. Вы всегда можете поменять язык в настройках.",
+        part4:
+          "Также тут будет скопление каких-то локалок или понравившихся мне штук(всё же делаю с душой).",
       },
+
+      aboutme: {
+        part1: "Меня зовут Артём",
+        part2:
+          "Я C#/.NET разработчик, увлекаюсь созданием веб-приложений, бэкенда и API. Люблю писать чистый код, разрабатывать удобные и эффективные решения.",
+        part3:
+          "Технологии: C#, .NET, ASP.NET, Entity Framework, PostgreSQL, Swagger/OpenAPI, Docker. ",
+      },
+
+      firstSecret: "Мне так нравится WW в этом шрифте)",
+
+      bio: "Ссылки на мои социальные сети:",
 
       loading: "Загрузка...",
     },

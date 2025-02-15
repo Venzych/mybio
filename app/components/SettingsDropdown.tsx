@@ -50,10 +50,14 @@ const SettingsDropdown = ({
     <Dropdown menu={{ items: settingsMenu }} trigger={["click"]}>
       <a onClick={(e) => e.preventDefault()}>
         <img
-          src="/images/settings.ico"
+          src={
+            darkMode
+              ? "/images/settings-dark.ico"
+              : "/images/settings-light.ico"
+          }
           alt="Settings"
-          width="24"
-          height="24"
+          width="28"
+          height="28"
           style={{ borderRadius: "50%" }}
         />
       </a>

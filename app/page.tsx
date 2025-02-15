@@ -1,6 +1,7 @@
 "use client";
 
 import "./styles.css";
+
 import { useTranslation } from "react-i18next";
 import { Content, Footer } from "antd/es/layout/layout";
 import { Button, Space } from "antd";
@@ -8,33 +9,24 @@ import { GithubOutlined } from "@ant-design/icons";
 import { FaVk, FaTelegramPlane } from "react-icons/fa";
 
 import Greeting from "./components/Greeting";
+import AboutMe from "./components/AboutMe";
+import Hobby from "./components/Hobby";
 
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <div className="border p-4">
-      <Content>
-        <div className="container">
-          <h1 className="gradient-text">
-            <Greeting></Greeting>
-          </h1>
-
-          <p className="highlight-text">{t("homeText.part2")}</p>
+    <div className="border p-4 mt-2">
+      <Content className="border p-4 w-full">
+        <Greeting />
+        <AboutMe />
+        <div className="font-raleway text-[15px] font-bold text-right">
+          {t("firstSecret")}
         </div>
-
-        <div id="about" style={{ height: "50vh" }}>
-          <h2>Section 1</h2>
-          <p>Content for section 1...</p>
-        </div>
-
-        <div style={{ height: "50vh" }}>
-          <h2>Section 2</h2>
-          <p>Content for section 2...</p>
-        </div>
+        <Hobby />
       </Content>
 
       <Footer className="highlight-text footer-text">
-        <div id="links">{t("homeText.bio")}</div>
+        <div id="links">{t("bio")}</div>
         <Space size="middle">
           <Button
             type="default"
