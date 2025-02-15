@@ -1,7 +1,6 @@
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
-import { toggleTheme } from "../utils/theme";
 
 const SettingsDropdown = ({
   darkMode,
@@ -14,6 +13,7 @@ const SettingsDropdown = ({
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
   };
 
   const toggleTheme = () => {
@@ -22,24 +22,32 @@ const SettingsDropdown = ({
     localStorage.setItem("theme", newTheme ? "dark" : "light");
   };
 
-  const settingsMenu = (
-    <Menu>
-      <Menu.Item key="darkMode" onClick={() => toggleTheme}>
-        {darkMode ? "☀️ " + t("lightMode") : "🌙 " + t("darkMode")}
-      </Menu.Item>
-      <Menu.SubMenu key="language" title={"🌍 " + t("language")}>
-        <Menu.Item key="en" onClick={() => changeLanguage("en")}>
-          {t("english")}
-        </Menu.Item>
-        <Menu.Item key="ru" onClick={() => changeLanguage("ru")}>
-          {t("russian")}
-        </Menu.Item>
-      </Menu.SubMenu>
-    </Menu>
-  );
+  const settingsMenu = [
+    {
+      key: "darkMode",
+      label: darkMode ? "☀️ " + t("lightMode") : "🌙 " + t("darkMode"),
+      onClick: toggleTheme,
+    },
+    {
+      key: "language",
+      label: "🌍 " + t("language"),
+      children: [
+        {
+          key: "en",
+          label: t("english"),
+          onClick: () => changeLanguage("en"),
+        },
+        {
+          key: "ru",
+          label: t("russian"),
+          onClick: () => changeLanguage("ru"),
+        },
+      ],
+    },
+  ];
 
   return (
-    <Dropdown overlay={settingsMenu} trigger={["click"]}>
+    <Dropdown menu={{ items: settingsMenu }} trigger={["click"]}>
       <a onClick={(e) => e.preventDefault()}>
         {t("settings")} <DownOutlined />
       </a>
