@@ -25,7 +25,7 @@ const SettingsDropdown = ({
   const settingsMenu = [
     {
       key: "darkMode",
-      label: darkMode ? "☀️ " + t("lightMode") : "🌙 " + t("darkMode"),
+      label: !darkMode ? "☀️ " + t("lightMode") : "🌙 " + t("darkMode"),
       onClick: toggleTheme,
     },
     {
@@ -49,7 +49,13 @@ const SettingsDropdown = ({
   return (
     <Dropdown menu={{ items: settingsMenu }} trigger={["click"]}>
       <a onClick={(e) => e.preventDefault()}>
-        {t("settings")} <DownOutlined />
+        <img
+          src="/images/settings.ico"
+          alt="Settings"
+          width="24"
+          height="24"
+          style={{ borderRadius: "50%" }}
+        />
       </a>
     </Dropdown>
   );

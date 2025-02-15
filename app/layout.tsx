@@ -1,4 +1,5 @@
 "use client";
+
 import "@ant-design/v5-patch-for-react-19";
 import "./globals.css";
 import Layout, { Content, Footer, Header } from "antd/es/layout/layout";
@@ -38,6 +39,7 @@ export default function RootLayout({
         >
           <Layout style={{ minHeight: "100vh" }}>
             <Header
+              id="home"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -46,15 +48,19 @@ export default function RootLayout({
                   "linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5))",
               }}
             >
-              <SettingsDropdown
-                darkMode={darkMode}
-                setDarkMode={setDarkMode}
-              ></SettingsDropdown>
+              <div style={{ marginLeft: "auto" }}>
+                <SettingsDropdown
+                  darkMode={darkMode}
+                  setDarkMode={setDarkMode}
+                />
+              </div>
             </Header>
+            <MainMenu />
+            <Clock darkMode={darkMode} />
             <Content
               style={{
                 maxWidth: "1920px",
-                width: "80%",
+                width: "75%",
                 margin: "0 auto",
                 padding: "0 20px",
               }}

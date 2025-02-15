@@ -20,21 +20,9 @@ export default function Clock({ darkMode }: { darkMode: boolean }) {
 
   return (
     <div
-      style={{
-        position: "fixed",
-        top: "80vh",
-        left: "20px",
-        zIndex: 1000,
-        width: "120px",
-        padding: "10px",
-        background: darkMode
-          ? "rgba(0, 0, 0, 0.9)"
-          : "rgba(255, 255, 255, 0.9)",
-        borderRadius: "10px",
-        boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-        fontSize: "16px",
-        color: darkMode ? "#fff" : "#000",
-      }}
+      className={`fixed bottom-[20vh] left-5 z-1000 w-[120px] p-2 rounded-lg text-xl font-mono ${
+        darkMode ? "text-white" : "text-black"
+      }`}
     >
       {currentTime}
     </div>

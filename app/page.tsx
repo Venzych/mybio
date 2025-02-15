@@ -1,37 +1,33 @@
-{
-  /*"use client";
+"use client";
 
-import { useTranslation } from "react-i18next";
-import Layout, { Content, Footer, Header } from "antd/es/layout/layout";
 import "./styles.css";
+import { useTranslation } from "react-i18next";
+import { Content, Footer } from "antd/es/layout/layout";
 import { Button, Space } from "antd";
 import { GithubOutlined } from "@ant-design/icons";
 import { FaVk, FaTelegramPlane } from "react-icons/fa";
-import Clock from "./components/Clock";
+
+import Greeting from "./components/Greeting";
 
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Header
-        style={{
-          backgroundColor: "#4CAF50", // Задаём зелёный цвет фона
-          color: "#fff", // Задаём белый цвет текста
-        }}
-      ></Header>
-
+    <div className="border p-4">
       <Content>
-        <div id="home" className="container">
-          <h1 className="gradient-text">{t("homeText.part1")}</h1>
+        <div className="container">
+          <h1 className="gradient-text">
+            <Greeting></Greeting>
+          </h1>
+
           <p className="highlight-text">{t("homeText.part2")}</p>
         </div>
-        <div id="about" style={{ height: "100vh", backgroundColor: "#f0f0f0" }}>
+
+        <div id="about" style={{ height: "50vh" }}>
           <h2>Section 1</h2>
           <p>Content for section 1...</p>
         </div>
 
-        <div style={{ height: "100vh", backgroundColor: "#e0e0e0" }}>
+        <div style={{ height: "50vh" }}>
           <h2>Section 2</h2>
           <p>Content for section 2...</p>
         </div>
@@ -70,9 +66,4 @@ export default function Home() {
       </Footer>
     </div>
   );
-}
-*/
-}
-export default function Home() {
-  return <h1>Hello</h1>;
 }

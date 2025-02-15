@@ -1,10 +1,20 @@
-// src/i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 const resources = {
   en: {
     translation: {
+      home: "Home",
+      about: "About",
+      links: "Links",
+
+      lightMode: "Light Mode",
+      darkMode: "Dark Mode",
+
+      language: "Language",
+      english: "English",
+      russian: "Russian",
+
       homeText: {
         part1: "Hello!",
         part2:
@@ -12,31 +22,28 @@ const resources = {
         bio: "Links to my social media:",
       },
 
-      language: "Language",
-      english: "English",
-      russian: "Russian",
-
-      lightMode: "Light Mode",
-      darkMode: "Dark Mode",
-
       loading: "Loading...",
     },
   },
   ru: {
     translation: {
+      home: "Главная",
+      about: "Обо мне",
+      links: "Ссылки",
+
+      lightMode: "Светлая тема",
+      darkMode: "Темная тема",
+
+      language: "Язык",
+      english: "Английский",
+      russian: "Русский",
+
       homeText: {
         part1: "Приветствую!",
         part2:
           "Данный сайт является первым проектом, который связан с бекэндом, да и в целом первый проект по фронту.",
         bio: "Ссылки на мои социальные сети:",
       },
-
-      language: "Язык",
-      english: "Английский",
-      russian: "Русский",
-
-      lightMode: "Светлая тема",
-      darkMode: "Темная тема",
 
       loading: "Загрузка...",
     },
