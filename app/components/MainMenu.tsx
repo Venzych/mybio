@@ -12,10 +12,9 @@ export default function MainMenu() {
   ];
 
   return (
-    <div className="font-raleway fixed top-[100px] left-[20px] z-[1000] w-[120px] p-[10px] text-[20px] text-left">
+    <div className="font-raleway fixed top-[12vh] left-[2vw] z-[1000] min-w-[7rem] w-[10vw] max-w-[12rem] text-left">
       <Anchor
         style={{
-          fontSize: "20px",
           padding: "10px 0",
         }}
         items={menuItems.map((item) => ({

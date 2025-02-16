@@ -11,6 +11,7 @@ import { FaVk, FaTelegramPlane } from "react-icons/fa";
 import Greeting from "./components/Greeting";
 import AboutMe from "./components/AboutMe";
 import Hobby from "./components/Hobby";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -18,10 +19,15 @@ export default function Home() {
     <div className="border p-4 mt-2">
       <Content className="border p-4 w-full">
         <Greeting />
-        <AboutMe />
-        <div className="font-raleway text-[15px] font-bold text-right">
-          {t("firstSecret")}
+
+        <div className="h-[80vh]">
+          <AboutMe />
+          <div className="font-raleway text-[15px] font-bold text-right">
+            {t("firstSecret")}
+          </div>
+          <Carousel />
         </div>
+
         <Hobby />
       </Content>
 

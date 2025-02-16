@@ -20,7 +20,7 @@ export default function Clock({ darkMode }: { darkMode: boolean }) {
 
   return (
     <div
-      className={`fixed bottom-[20vh] left-5 z-1000 w-[120px] p-2 rounded-lg text-xl font-mono ${
+      className={`fixed bottom-[20vh] left-[3vw] z-1000 w-[120px] p-2 rounded-lg text-xl font-mono ${
         darkMode ? "text-white" : "text-black"
       }`}
     >

@@ -4,8 +4,9 @@ export default function Hobby() {
   const { t } = useTranslation();
   return (
     <div id="hobby" className="font-raleway text-[20px] font-bold text-left">
-      <h2>Section 2</h2>
-      <p>Content for section 2...</p>
+      <p>{t("hobbies.music.part1")}</p>
+      <br />
+      <p>{t("hobbies.music.part2")}</p>
     </div>
   );
 }
