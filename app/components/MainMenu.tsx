@@ -2,7 +2,7 @@ import { Anchor } from "antd";
 import { useTranslation } from "react-i18next";
 
 export default function MainMenu() {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
 
   const menuItems = [
     { href: "#home", title: t("home") },

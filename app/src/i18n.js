@@ -5,8 +5,8 @@ const resources = {
   en: {
     translation: {
       home: "Home",
-      about: "About",
-      hobby: "Hobby",
+      about: "About Me",
+      hobby: "Hobbies",
       links: "Links",
 
       lightMode: "Light Mode",
@@ -17,18 +17,33 @@ const resources = {
       russian: "Russian",
 
       greeting: {
-        part1: "Hello!",
-        part2: "",
-        part3: "",
-        part4: "",
+        part1: "Welcome!",
+        part2:
+          "This website is a starting project that also serves as my business card.",
+        part3:
+          "The site is translated into English. You can always change the language in the settings.",
+        part4:
+          "Also, this will be a collection of some localizations or things I like (after all, I'm making it with passion).",
       },
 
       aboutme: {
-        part1: "",
-        part2: "",
+        part1: "My name is Artyom",
+        part2:
+          "I am a C#/.NET developer passionate about creating web applications, backends, and APIs. I love writing clean code and developing user-friendly and efficient solutions.",
+        part3:
+          "Technologies: C#, .NET, ASP.NET, Entity Framework, PostgreSQL, Swagger/OpenAPI, Docker.",
       },
 
-      firstSecret: "Мне так нравится WW в этом шрифте",
+      firstSecret: "I really like how WW looks in this font)",
+
+      hobbies: {
+        music: {
+          part1:
+            "Music accompanies me in different moments of life. It creates an atmosphere, helps me focus, relax, or, on the contrary, get energized. Sometimes it stays in the background, and sometimes it completely immerses me, making me experience every note.",
+          part2:
+            "I've always been interested not only in listening to music but also in understanding it on a deeper level. I learned to play the drums to feel the rhythm not just as a listener but as a musician. Right now, I'm especially into OG Buda, cold carti, Papin Olympos, and Platina — their sound reflects the mood I enjoy.",
+        },
+      },
 
       bio: "Links to my social media:",
 
