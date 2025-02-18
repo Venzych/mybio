@@ -1,5 +1,4 @@
-import { Menu, Dropdown } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import { Dropdown } from "antd";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 
