@@ -1,6 +1,6 @@
 "use client";
 
-import "./styles.css";
+import "./globals.css";
 
 import { useTranslation } from "react-i18next";
 import { Content, Footer } from "antd/es/layout/layout";
@@ -20,7 +20,7 @@ export default function Home() {
       <Content className="border p-4 w-full">
         <Greeting />
 
-        <div className="h-[80vh]">
+        <div>
           <AboutMe />
           <div className="font-raleway text-[15px] font-bold text-right">
             {t("firstSecret")}
@@ -28,10 +28,11 @@ export default function Home() {
           <Carousel />
         </div>
 
+        <div className="h-[20vh]"></div>
         <Hobby />
       </Content>
 
-      <Footer className="highlight-text footer-text">
+      <Footer className="!text-[20px] font-bold shadow-[2px_2px_5px_rgba(0,0,0,0.2)]  mb-5 text-center">
         <div id="links">{t("bio")}</div>
         <Space size="middle">
           <Button

@@ -48,7 +48,7 @@ export default function RootLayout({
                   "linear-gradient(to right, rgba(0, 0, 255, 0.5), rgba(255, 0, 0, 0.5))",
               }}
             >
-              <div style={{ marginLeft: "auto" }}>
+              <div className="ml-auto">
                 <SettingsDropdown
                   darkMode={darkMode}
                   setDarkMode={setDarkMode}
@@ -60,15 +60,14 @@ export default function RootLayout({
             <Content
               style={{
                 maxWidth: "1920px",
-                width: "75%",
+                width: "70%",
                 margin: "0 auto",
-                padding: "0 20px",
               }}
             >
               {children}
             </Content>
 
-            <Footer style={{ textAlign: "center" }}>Created by Venzy.</Footer>
+            <Footer className="text-center">Created by Venzy.</Footer>
           </Layout>
         </ConfigProvider>
       </body>

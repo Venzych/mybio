@@ -3,7 +3,10 @@ import { useTranslation } from "react-i18next";
 export default function Greeting() {
   const { t } = useTranslation();
   return (
-    <div id="about" className="container border p-4">
+    <div
+      id="about"
+      className="max-w-full mx-auto my-5 p-5 max-h-full rounded-lg shadow-md text-left transition-all duration-300 border"
+    >
       <h1 className="font-raleway text-[25px] font-bold text-center">
         {t("greeting.part1")}
       </h1>
