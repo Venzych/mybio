@@ -1,6 +1,7 @@
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 const SettingsDropdown = ({
   darkMode,
@@ -49,15 +50,15 @@ const SettingsDropdown = ({
   return (
     <Dropdown menu={{ items: settingsMenu }} trigger={["click"]}>
       <a onClick={(e) => e.preventDefault()}>
-        <img
+        <Image
           src={
             darkMode
               ? "/images/settings-dark.ico"
               : "/images/settings-light.ico"
           }
           alt="Settings"
-          width="28"
-          height="28"
+          width={28}
+          height={28}
           style={{ borderRadius: "50%" }}
         />
       </a>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Carousel } from "antd";
 
 const images = [
@@ -19,7 +20,13 @@ const Main: React.FC = () => (
   >
     {images.map((src, index) => (
       <div key={index}>
-        <img src={src} alt={`Image ${index + 1}`} className={styles} />
+        <Image
+          src={src}
+          alt={`Image ${index + 1}`}
+          className={styles}
+          width={3840}
+          height={2160}
+        />
       </div>
     ))}
   </Carousel>
