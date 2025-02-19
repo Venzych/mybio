@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 
 import "./src/i18n.js";
 
-import MainMenu from "./components/MainMenu";
+import { MainMenu } from "./components/MainMenu";
 import SettingsDropdown from "./components/SettingsDropdown";
 import Clock from "./components/Clock";
 
@@ -55,18 +55,12 @@ export default function RootLayout({
                 />
               </div>
             </Header>
+
             <MainMenu />
             <Clock darkMode={darkMode} />
-            <Content
-              style={{
-                maxWidth: "1920px",
-                width: "70%",
-                margin: "0 auto",
-              }}
-            >
+            <Content className="max-md:w-[90%] md:w-[70%] mx-auto">
               {children}
             </Content>
-
             <Footer className="text-center">Created by Venzy.</Footer>
           </Layout>
         </ConfigProvider>

@@ -12,6 +12,7 @@ import Greeting from "./components/Greeting";
 import AboutMe from "./components/AboutMe";
 import Hobby from "./components/Hobby";
 import Carousel from "./components/Carousel";
+import { MobileMainMenu } from "./components/MainMenu";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -26,6 +27,10 @@ export default function Home() {
             {t("firstSecret")}
           </div>
           <Carousel />
+        </div>
+
+        <div className="block md:hidden fixed top-4.5 left-3">
+          <MobileMainMenu />
         </div>
 
         <div className="h-[20vh]"></div>
